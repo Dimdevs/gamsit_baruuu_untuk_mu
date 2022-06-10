@@ -1,0 +1,116 @@
+body {
+    font-family: sans-serif, Helvetica;
+ }
+ 
+ h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 30px;
+ }
+ 
+ a {
+    color: #5FD068;
+    text-decoration: none;
+ }
+ 
+ #shifumi {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+ }
+ 
+ .user,
+ .computer {
+    width: 200px;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    background: #fdfdfd;
+ }
+ 
+ .user {
+    border: 1px dashed black;
+    border: 2px dashed #DADADA;
+ }
+ 
+ .user > * {
+    pointer-events: none;
+ }
+ 
+ .current-scores {
+    font-size: 3rem;
+    display: block;
+    margin: 10px 0;
+ }
+ 
+ .show-result {
+    font-size: .8rem;
+ }
+ 
+ .user .fa,
+ .computer .fa {
+    color: #5FD068;
+    padding: 10px;
+ }
+ 
+ .choice {
+    width: 100%;
+    margin-top: 60px;
+    margin-left: -40px;
+
+ }
+ 
+ .choice li {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 4em;
+    margin: 0 20px;
+ }
+ .text-info {
+    margin: 0px auto;
+    font-size: 14px;
+    font-weight: bold;
+    color: #5FD068;
+}
+
+ @media only screen and (max-width: 600px) {
+    #shifumi {
+        width: 100%;
+        left: 50%;
+        margin-top: 100px;
+        top: 50%;
+    }
+    .show-result {
+        display: none;
+    }
+    
+    .choice {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .choice li {
+        display: inline-flex;
+        cursor: pointer;
+        font-size: 4em;
+        margin: 0px auto;
+     }
+
+    .user,
+    .computer {
+         width: 90%;
+         margin: 0px auto;
+    }
+
+    .score {
+        margin: 0px auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+  }
